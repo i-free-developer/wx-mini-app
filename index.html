@@ -1,0 +1,206 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>WX mini APP - Le Wagon workshop by xiaohu Pei</title>
+    <link href="stylesheets/all.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/markdown.css" type="text/css">
+    <meta charset="utf-8"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" integrity="sha384-B41nY7vEWuDrE9Mr+J2nBL0Liu+nl/rBXTdpQal730oTHdlrlXHzYMOhDU60cwde" crossorigin="anonymous">
+    <script src="javascripts/all.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <section>
+      <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/background.jpg');">
+        <div class="banner-content">
+          <h1>Wechat mini Programs</h1>
+          <p>Learn mini APP development from Le Wagon</p>
+        </div>
+        <div class="banner-content">
+          <p>Join us in WeChat</p>
+          <img class="qrcode" src="images/QRCodeLeWagon.gif" width="150px;"/>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-3">
+        <div class="section-content">
+          <h2>Join us in the group</h2>
+        </div>
+        <div class="banner-content">
+          <img class="qrcode" src="images/group.png" width="180px;"/>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-2">
+        <div class="section-content">
+          <h2>1 Get wechat a mini APP ID (optional)</h2>
+        </div>
+        <div class="section-content">
+          <ol class="ol">
+            <li>get a mini APP ID at <a href="https://mp.weixin.qq.com"  class="green-text" target="_blank"><strong>https://mp.weixin.qq.com</strong></a>
+              <p>with a mini APP ID, you can submit your code to Tencent and get approved and finally get the mini app released, every one can use it from wechat</p>
+            </li>
+            <li>download the Integrated Development Environment (IDE) <a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html" class="green-text" target="_blank"><strong>Wechat IDE</strong></a></li>
+            <li>ready, go -></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-3">
+        <div class="section-content">
+          <h2> 2 Start the mini app project</h2>
+        </div>
+        <div class="section-content">
+          <ol class="ol">
+            <li>create a folder some where, such as <strong class="green-text">myminiapp</strong></a>
+            </li>
+            <li>create a mini app Project from IDE, choose the created folder</li>
+            <li>input the mini app ID you got in previous step, you can use test model if you don't got a mini APP ID</li>
+            <p><img src="images/project-setup.jpeg"> </p>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="section-2">
+        <div class="section-content">
+          <h2>3 File and code structure</h2>
+        </div>
+        <div class="section-content">
+          <ol class="ol">
+            <li>in the project folder, you should have the following folders and files
+              <ul>
+                <li>images folder - all images should be here, such as logo, other images in content should be in cloud</li>
+                <li>pages folder - all mini app pages are here</li>
+                <li>app.js - code will be executed when a user enter the app, put some basic business logic and global data here, such as user login</li>
+                <li>app.wxss - css for all pages</li>
+                <li>app.json - configuration of the mini app</li>
+                <li>project.config.json - configuration of the whole project</li>
+                <p><img src="images/files.jpg" width="300px"> </p>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="section-3">
+        <div class="section-content">
+          <h2>4 Add some conten and WXML markup</h2>
+        </div>
+        <div class="section-content">
+          <ol class="ol">
+            <li>To save time, just right-click the following image and save it inside your WeChat Mini Program code directory (put this file inside the "images" folder)
+              <p><img src="images/kungfupanda.jpg" width="300px;"></p></li>
+            <li>Then start writing some WXML code in index.wxml. We want:
+            <ul>
+              <li>One <code>image</code> tag</li>
+              <li>Two <code>text</code> tags</li>
+              <li>One <code>button</code> tag</li>
+            </ul>
+            </li>
+            <li>Have a little doubt here? no worries, always refer to the <a class="green-text" href="https://developers.weixin.qq.com/miniprogram/en/dev/component/index.html" target="_blank">Official Documentation!</a></li>
+            <li>Your code will look like this:</li>
+              <pre data-source-line="2"><code class="hljs">
+              <span class="hljs-tag">&lt;<span class="hljs-name">image</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/img/kungfupanda.jpg"</span>/&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">text</span>&gt;</span>Get new superpowers<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">text</span>&gt;</span>Learn to code!<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"default"</span>&gt;</span>Start today<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+              </code></pre>
+          </ol>
+        </div>
+        <div class="section-content">
+          <h2>Tips</h2>
+        </div>
+        <div class="section-content">
+          <ol class="ol">
+            <li>Use the built-in <code>auto complete</code> function to make sure you don't forget any <code>end tags</code></li>
+              <li>Your image src allows to load the file from the current page (index.wxml), you want to start with a slash / to write an absolute path</li>
+              <li>Don't forget to place your images inside a folder, e.g <code>/images</code></li>
+              <li>the <code>text</code> tag is "inline", i.e each tag will be side by side. If you want to break on two or multiple lines, consider using <code>view</code> tags instead</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-2">
+        <div class="section-content">
+          <h2>5 Add WXSS for Fonts and Colors</h2>
+        </div>
+        <div class="section-content">
+          <ol class="ol">
+            <li>First, transform your image tag into a background banner</li>
+
+            <li>Second, add <strong>CSS classes</strong> in your <code>index.wxml</code>. Your code will look like this:
+            </li>
+
+            <pre data-source-line="11"><code class="hljs">
+              &lt;<span class="hljs-keyword">view</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"banner"</span>&gt;
+                &lt;<span class="hljs-keyword">view</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"title"</span>&gt;Get <span class="hljs-keyword">new</span> superpowers&lt;/<span class="hljs-keyword">view</span>&gt;
+                &lt;<span class="hljs-keyword">view</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"proposition"</span>&gt;Learn to code!&lt;/<span class="hljs-keyword">view</span>&gt;
+                &lt;button type=<span class="hljs-string">"default"</span>&gt;Start today&lt;/button&gt;
+              &lt;/<span class="hljs-keyword">view</span>&gt;
+              </code></pre>
+
+            <li>Then copy/paste the <strong>CSS code</strong> below in <code>index.wxss</code> and customize it</li>
+
+            <pre data-source-line="20"><code class="hljs">
+          <span class="hljs-selector-class">.banner</span> {
+            <span class="hljs-attribute">color</span>: white;
+            <span class="hljs-attribute">text-align</span>: center;
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">100vh</span>;
+            <span class="hljs-attribute">background-size</span>: cover <span class="hljs-meta">!important</span>;
+            <span class="hljs-attribute">display</span>: flex;
+            <span class="hljs-attribute">align-items</span>: center;
+            <span class="hljs-attribute">justify-content</span>: center;
+            <span class="hljs-attribute">flex-direction</span>: column;
+            <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">'https://cloud-minapp-13908.cloud.ifanrusercontent.com/1fxsJQzleumTqmCq.jpg'</span>);
+            <span class="hljs-attribute">background-position</span>: center -<span class="hljs-number">30px</span>;
+            <span class="hljs-attribute">background-size</span>: cover;
+            <span class="hljs-attribute">background-repeat</span>: no-repeat;
+            <span class="hljs-attribute">padding</span>:<span class="hljs-number">30px</span>;
+          }
+          <span class="hljs-selector-class">.title</span> {
+            <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">100px</span>;
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">40px</span>;
+            <span class="hljs-attribute">padding</span>:<span class="hljs-number">0px</span>;
+            <span class="hljs-attribute">font-weight</span>: bold;
+            <span class="hljs-attribute">text-shadow</span>: <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">3px</span> <span class="hljs-built_in">rgba</span>(0, 0, 0, 0.6);
+          }
+          <span class="hljs-selector-class">.proposition</span> {
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">25px</span>;
+            <span class="hljs-attribute">font-weight</span>: bold;
+            <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(255, 255, 255);
+            <span class="hljs-attribute">text-shadow</span>: <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">3px</span> <span class="hljs-built_in">rgba</span>(0, 0, 0, 0.6);
+            <span class="hljs-attribute">margin</span>: <span class="hljs-number">30px</span>;
+          }
+          </code></pre>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-3">
+        <div class="section-content">
+          <h2>6 Make it Great!</h2>
+        </div>
+        <div class="section-content">
+          <ol class="ol">
+            <li>It's only 1 page... you must make it perfect.</li>
+            <li>Want to make new pages in this app?  <a class="green-text" href="https://developers.weixin.qq.com/miniprogram/dev/framework/config.html#%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE" target="_blank">Refer to this documentation </a>about the <code>app.json</code> file, used to globally configure the WeChat Mini Program
+            </li>
+            <li>Next, how about using your button to navigate to a subpage? <a class="green-text" href="https://developers.weixin.qq.com/miniprogram/dev/component/navigator.html?t=18082922" target="_blank">Refer to this documentation </a> to make a component WeChat calls a <code>navigator</code></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+
